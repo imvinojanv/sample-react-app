@@ -4,6 +4,16 @@ import React from 'react'
 //     return <h1>Hello Vinojan</h1>
 // }
 
-const Greet = () => <h1>Hello Vinojan Abhimanyu</h1> 
+const Greet = (props) => {  // props just an objects contain the values
+    console.log(props)
+    return (
+        <div>
+            <h2>
+                {props.name} as {props.heroName}
+            </h2>
+            {props.children}
+        </div>
+    )
+}
 
 export default Greet
