@@ -22,7 +22,7 @@ class Message extends Component {
                 <h3>
                     {this.state.message}
                 </h3>
-                <button onClick={() => this.changeMessage()}>Subscribe</button>
+                <button onClick={() => this.changeMessage()}>Subscribe</button> 
             </div>
         )
     }
