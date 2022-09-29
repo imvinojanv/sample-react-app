@@ -4,14 +4,15 @@ import React from 'react'
 //     return <h1>Hello Vinojan</h1>
 // }
 
-const Greet = (props) => {  // props just an objects contain the values
-    console.log(props)
+const Greet = props => {  // props just an objects contain the values
+
+    const { name, heroName, children } = props        // name, heroName, children are come from the props object
     return (
         <div>
             <h2>
-                {props.name} as {props.heroName}
+                {name} as {heroName}
             </h2>
-            {props.children}
+            {children}      {/* props.children */}
         </div>
     )
 }
