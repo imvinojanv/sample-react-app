@@ -17,14 +17,15 @@ function NameList() {
             skill: 'Vue JS'
         },
         {
-            id: 2,
+            id: 3,
             name: 'Super Man',
             age: 35,
             skill: 'React'
         }
     ]
-    const heroList = heros.map(hero => <Person hero={hero} />)      // Passing the array as props to Person.js
-
+    const heroList = heros.map(hero => <Person key={hero.id} hero={hero} />)      // Passing the array as props to Person.js
+    // This key={} is used to solve this error : Each child in a list should have a unique "key" prop.
+    
   return (
     <div>
         {heroList}
