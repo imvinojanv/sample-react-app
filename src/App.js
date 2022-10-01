@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
+
 import './App.css'
-import Greet from './components/Greet'
+import './appStyles.css'
+import styles from './appStyles.module.css'       // import the module stylesheet
+
 // import { Greet } from './components/Greet'
+import Greet from './components/Greet'
 import Welcome from './components/Welcome'
 import Hello from './components/Hello'
 import Message from './components/Message'
@@ -13,11 +17,18 @@ import EventBind from './components/EventBind'
 import ParentComponent from './components/ParentComponent'
 import UserGreeting from './components/UserGreeting'
 import NameList from './components/NameList'
+import Stylesheet from './components/Stylesheet'
+import Inline from './components/Inline'
 
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      <Inline />
+      {/* <Stylesheet primary={true} /> */}
+
+      {/* <NameList /> */}
 
       {/* <UserGreeting /> */}
 
