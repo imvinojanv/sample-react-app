@@ -20,11 +20,14 @@ import NameList from './components/NameList'
 import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline'
 import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
+
+      {/* <Form /> */}
 
       {/* <h1 className='error'>Error</h1>
       <h1 className={styles.success}>Success</h1> */}
